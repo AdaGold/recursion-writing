@@ -13,8 +13,8 @@ Write a method `reverse` that accepts a string as a parameter and then returns t
 - e.g. reverse("hello world") will return "dlrow olleh"
 
 ### Write #3
-`reverse(s)`
-Write a method `reverse` that accepts a string as a parameter and then reverses the string in place using a recursive algorithm.
+`reverse_inplace(s)`
+Write a method `reverse_inplace` that accepts a string as a parameter and then reverses the string in place using a recursive algorithm.
 - e.g. reverse("hello world") will convert the input string to "dlrow olleh"
 
 ### Write #4
