@@ -56,8 +56,8 @@ raise "bunny broke - bunny(10)" unless bunny(10) == 20
 puts "passes all bunny tests"
 
 # Nested Tests
-raise "nested broke - nested('((()))')" unless reverse("((()))") == true
-raise "nested broke - nested('())')" unless reverse("())") == false
+raise "nested broke - nested('((()))')" unless nested("((()))") == true
+raise "nested broke - nested('())')" unless nested("())") == false
 puts "passes all nested tests"
 
 # Search Tests
