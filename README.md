@@ -1,6 +1,9 @@
 ## Authoring a recursive algorithm
-Design a recursive algorithm for each of the following. What would be the time and space complexity for each?
-- **Note**: Some methods may need to call a recusive method with additional parameters. Check if this is needed.
+Design a recursive algorithm for each of the following. What would be the time and space complexity for each? Be sure to explain the reasoning behind the time and space complexities.
+
+<b>Notes</b>:
+- Some methods may need to call a helper recursive method with additional parameters.
+- Remember that space complexity takes into account memory used by the data structures created as well as call stack memory used.
 
 ### Write #1
 `factorial(n)`
@@ -27,7 +30,7 @@ Write a method `bunny` that accepts an integer parameter n. N represents a numbe
 ### Write #5
 `nested(s)`
 Write a method `nested` that accepts a string of only parenthesis and then returns if those parenthesis are properly nested. You may
-assume that no non-paren characters will be passed to this method.
+assume that no non-parenthesis characters will be passed to this method.
 - e.g. nested("((()))") = true
 - e.g. nested("())") = false
 **Challenge**: Try doing this without creating new strings in the process of solving the problem.
