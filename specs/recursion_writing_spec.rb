@@ -90,7 +90,7 @@ xdescribe "reverse_in_place" do
     string = "cat"
 
     # Act
-    answer = reverse(string)
+    answer = reverse_inplace(string)
 
     # Assert
     expect(answer).must_equal "tac"
@@ -101,7 +101,7 @@ xdescribe "reverse_in_place" do
     string = "a"
 
     # Act
-    answer = reverse(string)
+    answer = reverse_inplace(string)
 
     # Assert
     expect(answer).must_equal "a"
@@ -112,7 +112,7 @@ xdescribe "reverse_in_place" do
     string = ""
 
     # Act
-    answer = reverse(string)
+    answer = reverse_inplace(string)
 
     # Assert
     expect(answer).must_equal ""
@@ -122,7 +122,7 @@ xdescribe "reverse_in_place" do
     string = "apple"
 
     # Act
-    answer = reverse(string)
+    answer = reverse_inplace(string)
 
     # Assert
     expect(answer).must_equal "elppa"
