@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+require "minitest/skip_dsl"
 require_relative '../lib/recursive-methods'
 
 describe "factorial" do
@@ -37,7 +38,7 @@ describe "factorial" do
   end
 end
 
-describe "reverse" do
+xdescribe "reverse" do
   it "will reverse 'cat'" do
     # Arrange
     string = "cat"
@@ -83,7 +84,7 @@ describe "reverse" do
 end
 
 
-describe "reverse_in_place" do
+xdescribe "reverse_in_place" do
   it "will reverse 'cat'" do
     # Arrange
     string = "cat"
@@ -128,7 +129,7 @@ describe "reverse_in_place" do
   end
 end
 
-describe "bunny" do
+xdescribe "bunny" do
   it "returns 0 for 0 bunnies" do
     # Arrange
     count = 0
@@ -163,7 +164,7 @@ describe "bunny" do
   end
 end
 
-describe "nested" do
+xdescribe "nested" do
   it "will return true for empystring" do
     # Arrange
     string = ""
@@ -198,7 +199,7 @@ describe "nested" do
   end
 end
 
-describe "search" do
+xdescribe "search" do
   it "will return false for empty array" do
     # Arrange
     item = "a"
@@ -248,7 +249,7 @@ describe "search" do
     end      
 end
 
-describe "is_palindrome" do
+xdescribe "is_palindrome" do
   it "will return true for emptystring" do
     # Arrange
     string = ""
@@ -283,7 +284,7 @@ describe "is_palindrome" do
   end
 end
 
-describe "digit_match" do
+xdescribe "digit_match" do
   it "returns 4 for 1072503891 and 62530841" do
     # Arrange
     num1 = 1072503891
