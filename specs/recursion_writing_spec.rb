@@ -197,6 +197,17 @@ xdescribe "nested" do
     # Assert
     expect(answer).must_equal false
   end
+
+  it "will return false for an even length improperly nested series of parens" do
+    # Arrange
+    string = "(())))"
+
+    # Act
+    answer = nested(string)
+
+    # Assert
+    expect(answer).must_equal false
+  end
 end
 
 xdescribe "search" do
