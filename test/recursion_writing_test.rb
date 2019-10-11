@@ -331,4 +331,28 @@ xdescribe "digit_match" do
      # Assert
      expect(answer).must_equal 3
   end
+  
+  it "returns 1 for (0, 0)" do
+    # Arrange
+    num1 = 0
+    num2 = 0
+
+    # Act
+    answer = digit_match(num1, num2)
+
+     # Assert
+     expect(answer).must_equal 1
+  end
+  
+  it "returns 1 for (10, 20)" do
+    # Arrange
+    num1 = 10
+    num2 = 20
+
+    # Act
+    answer = digit_match(num1, num2)
+
+     # Assert
+     expect(answer).must_equal 1
+  end
 end
